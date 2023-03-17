@@ -2,57 +2,57 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: rgb(255, 255, 255);
+    padding: 0;
+    
   }
 
   .botonvolver {
-    text-decoration: none;
-    margin-top: 8px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    position: relative;
-    padding: 8px;
-    text-align: center;
-    background-color: #d08014 !important;
-    color: white;
-    border: 0;
-    border-radius: 35px;
-    width: 10%;
-    z-index: 1;
-    font-size: 15px;
-    font-family:  "Open Sans", Helvetica, Arial, sans-serif;;
-    cursor: pointer;
+   text-decoration: none;
+   margin: 8px 10px 5px;
+   position: relative;
+   padding: 8px;
+   text-align: center;
+   background-color: #d08014 !important;
+   color: white;
+   border: 0;
+   border-radius: 35px;
+   width: auto;
+   max-width: 100%;
+   z-index: 1;
+   font-size: 1.5em;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   cursor: pointer;
  }
+ 
 
  header {
-    background-color: #0D64A3;
-    max-width: 100%;
-    width: auto;
-    min-width: 960px;
+   background-color: #0D64A3;
+   max-width: 100%;
+   width: auto;
+}
+
+.text1 {
+   text-align: center;
+   font-size: 1.5625em;
+   text-decoration: none;
+   color: black;
  }
-
- .text1 {
-    text-align: center;
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-
-
- }
+ 
 
  .form2 {
-    background-color: white;
-    width: 500px;
-    height: 300px;
-    left: 30%;
-    padding: 20px;
-    align-content: center;
-    align-items: center;
-    margin: auto;
-    align-items: center;
-    position: absolute;
-    color: black;
-    outline: none;
- }
+   background-color: white;
+   width: 50%;
+   height: 50%;
+   padding: 20px;
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   outline: none;
+   box-sizing: border-box;
+}
+
 
  .btonbuscar {
     position: absolute;
@@ -80,20 +80,20 @@ body {
 
  }
 
- #fecha_inicio[type="date"]{
-    appearance: none;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    display: inline-block ;
-    position: absolute;
-    top: 38px;
-    left: 10%;
-    border: 1px solid rgb(223, 220, 220);
-    border-radius: 0;
-    background: rgb(223, 220, 220);
-    color: black;
- 
- }
+ #fecha_inicio[type="date"] {
+   appearance: none;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 15px;
+   display: inline-block;
+   position: absolute;
+   top: 38px;
+   left: 10%;
+   border: 1px solid rgb(223, 220, 220);
+   border-radius: 0;
+   background: rgb(223, 220, 220);
+   color: black;
+   width: calc((100% - 40px) * 0.25); /* 40px es el espacio entre los dos inputs */
+}
 
  .text_fechafin {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -106,62 +106,78 @@ body {
  }
 
  #fecha_fin[type="date"] {
-    
-    appearance: none;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    display: inline-block ;
-    position: absolute;
-    top: 38px;
-    left: 55%;
-    border: 1px solid rgb(223, 220, 220);
-    border-radius: 0;
-    background: rgb(223, 220, 220);
-    color: black;
- }
+   appearance: none;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 15px;
+   display: inline-block;
+   position: absolute;
+   top: 38px;
+   left: 57%;
+   border: 1px solid rgb(223, 220, 220);
+   border-radius: 0;
+   background: rgb(223, 220, 220);
+   color: black;
+   width: calc((100% - 40px) * 0.25); /* 40px es el espacio entre los dos inputs */
+}
 
  #texto2 {
-    position:relative;
- }
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 15px;
+      max-width: 100%;
+  }
+
 
 .registros {
-    width: 489px;
-    text-align:start;
-    position: absolute;
-    top: 40%;
-    left: 22px;
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 0;
-    padding-right: 5px;
-    background-color: rgb(223, 220, 220);
+   width: 50%; /* Establecer el ancho en un valor relativo */
+   text-align: start;
+   position: absolute;
+   top: calc(50px + 20px); 
+   left: 23%;
+   margin: 0;
+   padding-left: 3px;
+   padding-right: 30px;
+   background-color: rgb(223, 220, 220);
+   position: relative; 
+   font-size: 1.4vw;
 
 }
 
-.dwexcel {
+.registros h3 {
+   white-space: nowrap;
+   overflow: hidden;
+   max-width: 100%;
+
+ }
+
+ .registros p {
+   max-width: 100%;
+   word-wrap: break-word;
+ }
+ 
+
+ .dwexcel {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   position: absolute;
-   top: 107%;
-   margin-top: 10px;
+   position: relative;
+   bottom: calc(-60px - 10px); 
+   left: 23%;
    background-color: #00733b !important;
    color: white !important;
    border: 0;
-   padding: 10px;
-   padding-left: 20px;
-   padding-right: 20px;
-   margin-bottom: 7px;
+   padding: 5px;
+   margin-bottom: 1.75vw;
    text-align: center;
    cursor: pointer;
    border-radius: 35px;
+   font-size: 15px;
 }
+
 
 .xlsico {
    width: 20px;
-   height:18px;
+   height: 18px;
    margin-left: 3px;
-
-
-
 }
+
 

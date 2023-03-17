@@ -5,23 +5,25 @@ body {
  }
  
  .botonvol {
-    text-decoration: none;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    position: relative;
-    padding: 8px;
-    text-align: center;
-    background-color: #d08014 !important;
-    color: white;
-    border: 0;
-    border-radius: 35px;
-    width: 10%;
-    z-index: 1;
-    font-size: 15px;
-    font-family:  "Open Sans", Helvetica, Arial, sans-serif;;
-    cursor: pointer;
- }
+   text-decoration: none;
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   position: relative;
+   padding: 8px;
+   text-align: center;
+   background-color: #d08014 !important;
+   color: white;
+   border: 0;
+   border-radius: 35px;
+   width: 10vw;
+   height: auto;
+   z-index: 1;
+   font-size: 1.5vw;
+   font-family:  "Open Sans", Helvetica, Arial, sans-serif;;
+   cursor: pointer;
+}
+
  
  
  .texto {
@@ -30,6 +32,8 @@ body {
     margin: auto;
     padding-bottom: 20px;
     color: black;
+    position: relative;
+    right: 10%;
  }
  
  .texto2 {
@@ -48,40 +52,42 @@ body {
  }
  
  .formulario1 {
-    background-color: white;
-    width: 500px;
-    height: 900px;
-    left: 30%;
-    padding: 20px;
-    align-content: center;
-    align-items: center;
-    margin: auto;
-    align-items: center;
-    position: absolute;
-    color: black;
-    padding-bottom: 8px;
-    outline: none;
- }
- 
- .texttarea {
-    background-color: white;
-    color: black;
-    text-align: start;
-    position: relative;
-    margin: auto;
-    font-size: 15px;
-    border: 0;
-    border-radius: 5px;
-    outline: none;
-    resize: none;
-    padding-right: 15px;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
- }
- 
- .texttarea:focus::placeholder {
-    color: transparent;
-    transition: 0.3s;
- }
+   background-color: white;
+   width: 50%;
+   height: 900px;
+   left: 30%;
+   padding: 20px;
+   align-content: center;
+   align-items: center;
+   margin: auto;
+   align-items: center;
+   position: absolute;
+   color: black;
+   padding-bottom: 8px;
+   outline: none;
+}
+
+.texttarea {
+   background-color: white;
+   color: black;
+   text-align: start;
+   position: relative;
+   margin: auto;
+   font-size: 15px;
+   border: 0;
+   border-radius: 5px;
+   outline: none;
+   resize: none;
+   padding-right: 15px;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   width: 97%; 
+}
+
+.texttarea:focus::placeholder {
+   color: transparent;
+   transition: 0.3s;
+}
+
  
  .email {
     background-color: white;
@@ -89,10 +95,6 @@ body {
     border: 0;
     padding: 15px;
     width: 40%;
- }
- 
- .checkbox {
-    cursor: pointer;
  }
  
  .botonenv {
@@ -154,11 +156,10 @@ body {
     text-align: center;
  }
 
-header {
+ header {
    background-color: #0D64A3;
    max-width: 100%;
    width: auto;
-   min-width: 960px;
 }
 
 .welcome {
@@ -166,9 +167,10 @@ header {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    color: white;
    background-color: #0D64A3;
-   left: 41%;
+   left: 52%;
+   transform: translateX(-52%);
    z-index: 1;
-   top: -1%;
+   top: 0;
 }
 
 #fechaActual[type="date"] {
@@ -186,7 +188,7 @@ header {
    background: rgb(201, 198, 198);
    font-size: 17px;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   border-radius:0 ;
+   border-radius: 0;
    border: 0;
-
+   width: 100%;
 }
