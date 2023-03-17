@@ -11,7 +11,6 @@ if (!empty($_POST["btonlogin"])) {
     // Verifica si los campos de correo electrónico y contraseña están vacíos
     if (empty($_POST["email"]) || empty($_POST["password"])) {
         // Si los campos están vacíos, muestra un mensaje de error
-<<<<<<< Updated upstream
         header("location:login.php?error=campos_vacios");
     } else {
         // Si los campos no están vacíos, se procede a verificar la información del usuario
@@ -41,7 +40,6 @@ if (!empty($_POST["btonlogin"])) {
             } else {
                 header("location:login.php?error=usuario_incor");
             }
-=======
         print "<h4 style='color:red' class='txtalert'>Los campos estan vacios.</h4>";
     } else {
         // Si los campos no están vacíos, se procede a verificar la información del usuario
@@ -51,9 +49,7 @@ if (!empty($_POST["btonlogin"])) {
         $password = $_POST["password"];
 
         // Se realiza una consulta a la base de datos para verificar si hay un usuario registrado con el correo electrónico y contraseña proporcionados
-        $sql = $conexion->query(
-            "SELECT * FROM users WHERE email='$email' AND password='$password'"
-        );
+        $sql = $conexion->query("SELECT * FROM users WHERE email='$email' AND password='$password'");
 
         // Si se encuentra un usuario con los valores proporcionados, se inicia sesión y se redirige al usuario a la página 'form.php'
         if ($datos = $sql->fetch_object()) {
@@ -62,24 +58,11 @@ if (!empty($_POST["btonlogin"])) {
             header("location:form.php");
 
             // Si no se encuentra un usuario con los valores proporcionados, muestra un mensaje de error
->>>>>>> Stashed changes
         } else {
             header("location:login.php?error=usuario_incor");
         }
     }
 }
+}
+
 ?>
-
-
-
-
-
-<<<<<<< Updated upstream
-
-
-
-
-
-
-=======
->>>>>>> Stashed changes
