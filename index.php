@@ -31,21 +31,10 @@
       }, 3000);
    </script>
    <body>
-<<<<<<< Updated upstream
       <header>
          <a class="textregis" href="registro_incidente.php"><button class="registroincidente">Registro incidente grave</button></a>
 
       </header>
-=======
-      <?php
-         // Verifica si existe la variable de sesión "formulario_enviado" y muestra un mensaje de éxito si su valor es verdadero
-         if (isset($_SESSION['formulario_enviado']) && $_SESSION['formulario_enviado'] === true) {
-         echo '<p id="mensaje-exito" class="mensaje-exito transicion">Mensaje enviado con exito!.</p>';
-         // Elimina la variable de sesión para que el mensaje solo se muestre una vez
-         unset($_SESSION['formulario_enviado']);
-         }
-         ?>
->>>>>>> Stashed changes
       <h1 class="textwelcome">Traspaso turno TI</h1>
       <div id="current_date">
       <script>

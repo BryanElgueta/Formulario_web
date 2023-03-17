@@ -38,21 +38,11 @@
             ?>
          <div>
             <label for="inputemail">Ingresa tu correo electrónico:</label>
-<<<<<<< Updated upstream
             <input type="email" placeholder="correo@ejemplo.com" id="email" name="email"></input>
          </div>
          <div>
             <label for="inputpassword">Ingresa tu contraseña:</label>
             <input type="password" placeholder="contraseña" id="password" name="password"></input>
-=======
-            <input type="email" placeholder="correo@ejemplo.com" id="email" name="email"
-               onkeydown="if(event.keyCode==13) document.getElementById('password').click()"></input>
-         </div>
-         <div>
-            <label for="inputpassword">Ingresa tu contraseña:</label>
-            <input type="password" placeholder="contraseña" id="password" name="password"
-               onkeydown="if(event.keyCode==13) document.getElementById('login-btn').click()"></input>
->>>>>>> Stashed changes
          </div>
          <div>
             <input type="submit" class="buttonlogin" name="btonlogin" value="Iniciar Sesión"></input>
