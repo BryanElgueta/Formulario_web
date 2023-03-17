@@ -1,0 +1,146 @@
+body {
+   margin: 0;
+   background-color: rgb(255, 255, 255);
+}
+
+header {
+   width: auto;
+   background-color: #0D64A3;
+   padding: 30px;
+   margin-bottom: 5%;
+}
+
+.textwelcome {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 50px;
+   text-align: center;
+   margin: 0;
+   position: relative;
+   color: black !important;
+   padding-top: 100px;
+}
+
+#current_date {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 20px;
+   text-align: center;
+   margin: 0;
+   position: relative;
+   color: black !important;
+   padding: auto;
+}
+
+.subtxt {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 20px;
+   text-align: center;
+   margin: 0;
+   position: relative;
+   color: black !important;
+   padding: auto;
+}
+
+.buttonl {
+   margin-top: 30px;
+   font-weight: 600;
+   font-size: 18px;
+   background-color: #d08014 !important;
+   border: 0;
+   padding-left: 70px;
+   padding-right: 70px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   cursor: pointer;
+   text-decoration: none;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   text-align: center;
+   border-radius: 35px;
+   color: white !important;
+   margin-left: 41%;
+}
+
+
+.mensaje-exito.transicion {
+   color: white;
+   background-color: rgb(0, 199, 33);
+   border-radius: 35px;
+   text-align: center;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   position: fixed;
+   top: -100px;
+   left: 39%;
+   animation: mostrar-mensaje 1s forwards, ocultar-mensaje 1s forwards 3s;
+}
+
+@keyframes mostrar-mensaje {
+   0% {
+      top: -100px;
+   }
+
+   100% {
+      top: 0;
+   }
+}
+
+@keyframes ocultar-mensaje {
+   0% {
+      top: 0;
+   }
+
+   100% {
+      top: -100px;
+   }
+}
+
+ 
+footer {
+   width: auto;
+   padding-top: 120px;
+   padding-bottom: 100px;
+   background-color: rgb(34 100 167);
+   margin-top: 16%;
+   bottom: 0;
+   margin-bottom: 0;
+}
+
+.imgfooter {
+   max-width: 100%;
+   height: 110px;
+   border: 0; 
+   border-style: none;
+   position: absolute;
+   left: 43%;
+   bottom: -19%;
+}
+
+.registroincidente {
+   background-color: #d08014!important;
+   color: white!important;
+   position: absolute;
+   left: 80%;
+   border-radius: 35px;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   top: 2%;
+   padding: 9px;
+   border: 0;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
+ 
+
+
+
+
+  
+  
+
+  
+
+
+
