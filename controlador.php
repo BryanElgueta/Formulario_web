@@ -40,29 +40,20 @@ if (!empty($_POST["btonlogin"])) {
             } else {
                 header("location:login.php?error=usuario_incor");
             }
-        print "<h4 style='color:red' class='txtalert'>Los campos estan vacios.</h4>";
-    } else {
-        // Si los campos no están vacíos, se procede a verificar la información del usuario
-
-        // Se obtienen los valores de correo electrónico y contraseña del formulario
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-
-        // Se realiza una consulta a la base de datos para verificar si hay un usuario registrado con el correo electrónico y contraseña proporcionados
-        $sql = $conexion->query("SELECT * FROM users WHERE email='$email' AND password='$password'");
-
-        // Si se encuentra un usuario con los valores proporcionados, se inicia sesión y se redirige al usuario a la página 'form.php'
-        if ($datos = $sql->fetch_object()) {
-            $_SESSION["nombre"] = $datos->nombre;
-            $_SESSION["apellido"] = $datos->apellido;
-            header("location:form.php");
-
-            // Si no se encuentra un usuario con los valores proporcionados, muestra un mensaje de error
         } else {
             header("location:login.php?error=usuario_incor");
         }
     }
 }
-}
-
 ?>
+
+
+
+
+
+
+
+
+
+
+
