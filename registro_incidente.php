@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
     
 
     <form class="form2" id="registro" method="POST">
-        <fieldset>
+        
         <label class="text_fechaini" for="fecha_inicio">Desde:</label>
         <input type="date" id="fecha_inicio" name="fecha_inicio" value="<?php echo $fechaInicio; ?>">
         <br>
@@ -48,13 +48,11 @@ if (isset($_POST['submit'])) {
         <input type="date" id="fecha_fin" name="fecha_fin" value="<?php echo $fechaFin; ?>">
         <br>
         <input type="submit" name="submit" class="btonbuscar"value="Buscar">
-        </fieldset>
-
+        
         <?php if ($resultado) { 
     $contador = mysqli_num_rows($resultado); // Obtiene la cantidad de registros devueltos por la consulta
     if ($contador > 0) { // Si hay registros, muestra el botón de descarga de Excel
 ?>
-    <button type="submit" form="registro" class="dwexcel" formaction="downloadexcel.php" name="descargar">Descargar en Excel<img class="xlsico"src="img\xls-file.png"></button>
     <ul class="registros">
         <h2 id="texto2">Registros</h2>
         <h3><strong>Fecha</strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</strong><strong>Incidente Grave</strong></h3>
@@ -62,6 +60,7 @@ if (isset($_POST['submit'])) {
             <p><?php echo $fila['fecha']; ?><strong> | </strong><?php echo $fila['incidentegrave']; ?></p>
         <?php } ?>
     </ul>
+    <button type="submit" form="registro" class="dwexcel" formaction="downloadexcel.php" name="descargar">Descargar en Excel<img class="xlsico"src="img\xls-file.png"></button>
 <?php 
     } else { // Si no hay registros, muestra un mensaje
         echo "<p>No se encontraron registros para las fechas seleccionadas.</p>";
