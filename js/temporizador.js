@@ -1,10 +1,1 @@
-var startTime = Date.now();
-var timerElement = document.getElementById("timer");
-setInterval(function () {
-   var elapsedTime = Date.now() - startTime;
-   var hours = Math.floor(elapsedTime / 3600000);
-   var minutes = Math.floor((elapsedTime % 3600000) / 60000);
-   var seconds = Math.floor((elapsedTime % 60000) / 1000);
-   var formattedTime = ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
-   timerElement.innerHTML = formattedTime;
-}, 1000);
+var startTime=Date.now(),timerElement=document.getElementById("timer");setInterval(function(){var e=Date.now()-startTime,t=Math.floor(e/36e5),r=Math.floor(e%36e5/6e4),n=Math.floor(e%6e4/1e3),a=("0"+t).slice(-2)+":"+("0"+r).slice(-2)+":"+("0"+n).slice(-2);timerElement.innerHTML=a},1e3);

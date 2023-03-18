@@ -1,10 +1,10 @@
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
- }
- 
- .botonvol {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   margin: 0;
+   background-color: rgb(255, 255, 255);
+}
+
+.botonvol {
    text-decoration: none;
    margin-top: 5px;
    margin-left: 10px;
@@ -20,38 +20,38 @@ body {
    height: auto;
    z-index: 1;
    font-size: 1.5vw;
-   font-family:  "Open Sans", Helvetica, Arial, sans-serif;;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   ;
    cursor: pointer;
 }
 
- 
- 
- .texto {
-    text-align: center;
-    font-size: 27px;
-    margin: auto;
-    padding-bottom: 20px;
-    color: black;
-    position: relative;
-    right: 10%;
- }
- 
- .texto2 {
-    font-size: medium;
-    position: relative;
-    margin: 10px;
-    color: azure;
- }
- 
- .texto3 {
-    font-size: small;
-    position: relative;
-    margin: auto;
-    color: black;
-    padding-bottom: 5px;
- }
- 
- .formulario1 {
+
+.texto {
+   text-align: center;
+   font-size: 27px;
+   margin: auto;
+   padding-bottom: 20px;
+   color: black;
+   position: relative;
+   right: 10%;
+}
+
+.texto2 {
+   font-size: medium;
+   position: relative;
+   margin: 10px;
+   color: azure;
+}
+
+.texto3 {
+   font-size: small;
+   position: relative;
+   margin: auto;
+   color: black;
+   padding-bottom: 5px;
+}
+
+.formulario1 {
    background-color: white;
    width: 50%;
    height: 900px;
@@ -80,7 +80,7 @@ body {
    resize: none;
    padding-right: 15px;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   width: 97%; 
+   width: 97%;
 }
 
 .texttarea:focus::placeholder {
@@ -88,89 +88,90 @@ body {
    transition: 0.3s;
 }
 
- 
- .email {
-    background-color: white;
-    color: black;
-    border: 0;
-    padding: 15px;
-    width: 40%;
- }
- 
- .botonenv {
-    position: relative;
-    margin-top: 20px;
-    background-color: #d08014 !important;
-    color: white !important;
-    border: 0;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 7px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 35px;
- }
- 
- 
- .botonreset {
-    display: inline-block;
-    background-color: #0D64A3 !important;
-    color: white !important;
-    border: 0;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 7px;
-    text-align: center;
-    top: 20px;
-    left: 30%;
-    cursor: pointer;
-    border-radius: 35px;
- }
- 
- 
- .legendtxt {
-    color: black;
-    font-size: larger;
- }
- 
- #timer {
-    color: white !important;
-    background-color: #0a4a77 !important;
-    border-top: white;
-    border-color: white;
-    border: 1px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0 ;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width: 100px;
-    margin-bottom: 3px;
-    margin: 0;
-    padding: 10px;
-    font-size: medium;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    position: fixed;
-    text-align: center;
- }
 
- header {
+.email {
+   background-color: white;
+   color: black;
+   border: 0;
+   padding: 15px;
+   width: 40%;
+}
+
+.botonenv {
+   position: relative;
+   margin-top: 20px;
+   background-color: #d08014 !important;
+   color: white !important;
+   border: 0;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-bottom: 7px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 35px;
+}
+
+
+.botonreset {
+   display: inline-block;
+   background-color: #0D64A3 !important;
+   color: white !important;
+   border: 0;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-top: 20px;
+   margin-bottom: 7px;
+   text-align: center;
+   top: 20px;
+   left: 30%;
+   cursor: pointer;
+   border-radius: 35px;
+}
+
+
+.legendtxt {
+   color: black;
+   font-size: larger;
+}
+
+#timer {
+   color: white !important;
+   background-color: #0a4a77 !important;
+   border-top: white;
+   border-color: white;
+   border: 1px;
+   border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   width: 100px;
+   margin-bottom: 3px;
+   margin: 0;
+   padding: 10px;
+   font-size: medium;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   position: fixed;
+   text-align: center;
+}
+
+header {
    background-color: #0D64A3;
    max-width: 100%;
    width: auto;
 }
 
 .welcome {
-   position: absolute;
+   text-align: center;
+   position: relative;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    color: white;
    background-color: #0D64A3;
-   left: 52%;
+   left: 54%;
    transform: translateX(-52%);
    z-index: 1;
-   top: 0;
+   top: -10px;
 }
 
 #fechaActual[type="date"] {

@@ -58,6 +58,41 @@ label {
   color: black;
 }
 
+#nombre {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  border-color: #cdcdcd;
+  border-style: solid;
+  color: black !important;
+}
+
+#apellido {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  border-color: #cdcdcd;
+  border-style: solid;
+  color: black !important;
+}
+
+
 #email {
   display: block;
   height: 50px;
@@ -92,7 +127,7 @@ label {
   color: black !important;
 }
 
-.buttonlogin {
+.buttonregister {
   margin-top: 50px;
   width: 106%;
   background-color: #0D64A3 !important;
@@ -160,7 +195,7 @@ input#password:focus::placeholder {
   }
 }
 
-.txtregister {
+.txtlogin {
   color: #0D64A3;
   text-decoration: none;
   position: relative;
@@ -170,5 +205,3 @@ input#password:focus::placeholder {
   font-size: 15px;
 
 }
-
-

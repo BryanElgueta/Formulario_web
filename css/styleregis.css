@@ -1,12 +1,12 @@
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    
-  }
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   margin: 0;
+   background-color: rgb(255, 255, 255);
+   padding: 0;
 
-  .botonvolver {
+}
+
+.botonvolver {
    text-decoration: none;
    margin: 8px 10px 5px;
    position: relative;
@@ -19,13 +19,13 @@ body {
    width: auto;
    max-width: 100%;
    z-index: 1;
-   font-size: 1.5em;
+   font-size: 15px;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    cursor: pointer;
- }
- 
+}
 
- header {
+
+header {
    background-color: #0D64A3;
    max-width: 100%;
    width: auto;
@@ -36,10 +36,10 @@ body {
    font-size: 1.5625em;
    text-decoration: none;
    color: black;
- }
- 
+}
 
- .form2 {
+
+.form2 {
    background-color: white;
    width: 50%;
    height: 50%;
@@ -54,33 +54,33 @@ body {
 }
 
 
- .btonbuscar {
-    position: absolute;
-    left: 37%;
-    margin-top: 20px;
-    background-color: #d08014 !important;
-    color: white !important;
-    border: 0;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 7px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 35px;
- }
+.btonbuscar {
+   position: absolute;
+   left: 37%;
+   margin-top: 20px;
+   background-color: #d08014 !important;
+   color: white !important;
+   border: 0;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-bottom: 7px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 35px;
+}
 
- .text_fechaini {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: black!important;
-    font-size: 18px;
-    position: absolute;
-    top: 20px;
-    left: 17%;
+.text_fechaini {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   color: black !important;
+   font-size: 18px;
+   position: absolute;
+   top: 20px;
+   left: 17%;
 
- }
+}
 
- #fecha_inicio[type="date"] {
+#fecha_inicio[type="date"] {
    appearance: none;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    font-size: 15px;
@@ -92,20 +92,21 @@ body {
    border-radius: 0;
    background: rgb(223, 220, 220);
    color: black;
-   width: calc((100% - 40px) * 0.25); /* 40px es el espacio entre los dos inputs */
+   width: calc((100% - 40px) * 0.25);
+   /* 40px es el espacio entre los dos inputs */
 }
 
- .text_fechafin {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: black!important;
-    font-size: 18px;
-    position: absolute;
-    left: 63%;
-    top: 19px;
-    margin-bottom: 3px;
- }
+.text_fechafin {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   color: black !important;
+   font-size: 18px;
+   position: absolute;
+   left: 63%;
+   top: 19px;
+   margin-bottom: 3px;
+}
 
- #fecha_fin[type="date"] {
+#fecha_fin[type="date"] {
    appearance: none;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    font-size: 15px;
@@ -117,29 +118,31 @@ body {
    border-radius: 0;
    background: rgb(223, 220, 220);
    color: black;
-   width: calc((100% - 40px) * 0.25); /* 40px es el espacio entre los dos inputs */
+   width: calc((100% - 40px) * 0.25);
+   /* 40px es el espacio entre los dos inputs */
 }
 
- #texto2 {
-      position: relative;
-      white-space: nowrap;
-      overflow: hidden;
-      font-size: 15px;
-      max-width: 100%;
-  }
+#texto2 {
+   position: relative;
+   white-space: nowrap;
+   overflow: hidden;
+   font-size: 15px;
+   max-width: 100%;
+}
 
 
 .registros {
-   width: 50%; /* Establecer el ancho en un valor relativo */
+   width: 50%;
+   /* Establecer el ancho en un valor relativo */
    text-align: start;
    position: absolute;
-   top: calc(50px + 20px); 
+   top: calc(50px + 20px);
    left: 23%;
    margin: 0;
    padding-left: 3px;
    padding-right: 30px;
    background-color: rgb(223, 220, 220);
-   position: relative; 
+   position: relative;
    font-size: 1.4vw;
 
 }
@@ -149,18 +152,18 @@ body {
    overflow: hidden;
    max-width: 100%;
 
- }
+}
 
- .registros p {
+.registros p {
    max-width: 100%;
    word-wrap: break-word;
- }
- 
+}
 
- .dwexcel {
+
+.dwexcel {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
    position: relative;
-   bottom: calc(-60px - 10px); 
+   bottom: calc(-60px - 10px);
    left: 23%;
    background-color: #00733b !important;
    color: white !important;
@@ -180,4 +183,13 @@ body {
    margin-left: 3px;
 }
 
+.noregis {
+   color: black;
+   background-color: rgb(223, 220, 220);
+   position: relative;
+   top: 50%;
+   padding: 20px;
+   font-size: 18px;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 
+}
