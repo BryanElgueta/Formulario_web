@@ -13,7 +13,7 @@ body {
   padding: 1%;
   text-align: center;
   background-color: #0D64A3 !important;
-  color: white;
+  color: #ffffff;
   border: 0;
   border-radius: 0.625em;
   width: 10%;
@@ -27,13 +27,13 @@ body {
 
 .textvol {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 form {
   height: 520px;
   width: 400px;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -55,7 +55,7 @@ label {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
-  color: black;
+  color: #000000;
 }
 
 #email {
@@ -72,7 +72,7 @@ label {
   font-weight: 300;
   border-color: #cdcdcd;
   border-style: solid;
-  color: black !important;
+  color: #000000 !important;
 }
 
 #password {
@@ -89,14 +89,14 @@ label {
   font-weight: 300;
   border-color: #cdcdcd;
   border-style: solid;
-  color: black !important;
+  color: #000000 !important;
 }
 
 .buttonlogin {
   margin-top: 50px;
   width: 106%;
   background-color: #0D64A3 !important;
-  color: white !important;
+  color: #ffffff!important;
   padding: 0 10px;
   font-size: 18px;
   font-weight: 600;
@@ -119,12 +119,22 @@ label {
 
 .txtalert {
   text-align: center;
-  background-color: rgb(255, 0, 0);
+  background-color: #FF0000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border-radius: 35px;
   padding: 10px;
   border-style: solid;
-  color: white !important;
+  color: #ffffff !important;
+}
+
+.txtexito {
+  text-align: center;
+  background-color: #00c721;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 35px;
+  padding: 10px;
+  border-style: solid;
+  color: #ffffff !important;
 }
 
 input#email:focus::placeholder {

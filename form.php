@@ -98,7 +98,6 @@
                   <option value="rrojasg@agrosuper.com">Roberto Rojas</option>
                   <option value="">Luis Baeza</option>
                   <option value="informaticapsv@agrosuper.com">Informatica Planta San Vicente</option>
-                  <option value="bryansecu3@outlook.com">Brayan Elgueta</option>
                </select>
             </div>
          </fieldset>

@@ -36,6 +36,18 @@
             }
             }
             ?>
+
+            <!--==================================================================================-->
+            
+           <?php
+            if (isset($_GET["exito"])) {
+            $exito = $_GET["exito"];
+            
+            if ($exito == "registrad") {
+            echo "<h4 style='color:green' class='txtexito'>Registrado correctamente.</h4>";
+            }
+            }
+            ?>
          <div>
             <label for="inputemail">Ingresa tu correo electrónico:</label>
             <input type="email" placeholder="correo@ejemplo.com" id="email" name="email"></input>

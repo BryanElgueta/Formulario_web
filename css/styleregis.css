@@ -56,7 +56,7 @@ header {
 
 .btonbuscar {
    position: absolute;
-   left: 37%;
+   left: 40%;
    margin-top: 20px;
    background-color: #d08014 !important;
    color: white !important;
@@ -72,7 +72,7 @@ header {
 
 .text_fechaini {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   color: black !important;
+   color: #000000 !important;
    font-size: 18px;
    position: absolute;
    top: 20px;
@@ -88,17 +88,17 @@ header {
    position: absolute;
    top: 38px;
    left: 10%;
-   border: 1px solid rgb(223, 220, 220);
+   border: 1px solid #dfdcdc;
    border-radius: 0;
-   background: rgb(223, 220, 220);
-   color: black;
+   background: #dfdcdc;
+   color: #000000;
    width: calc((100% - 40px) * 0.25);
    /* 40px es el espacio entre los dos inputs */
 }
 
 .text_fechafin {
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   color: black !important;
+   color: #000000 !important;
    font-size: 18px;
    position: absolute;
    left: 63%;
@@ -114,10 +114,10 @@ header {
    position: absolute;
    top: 38px;
    left: 57%;
-   border: 1px solid rgb(223, 220, 220);
+   border: 1px solid #dfdcdc;
    border-radius: 0;
-   background: rgb(223, 220, 220);
-   color: black;
+   background: #dfdcdc;
+   color: #000000;
    width: calc((100% - 40px) * 0.25);
    /* 40px es el espacio entre los dos inputs */
 }
@@ -126,7 +126,7 @@ header {
    position: relative;
    white-space: nowrap;
    overflow: hidden;
-   font-size: 15px;
+   font-size: 1.4vw;
    max-width: 100%;
 }
 
@@ -141,7 +141,7 @@ header {
    margin: 0;
    padding-left: 3px;
    padding-right: 30px;
-   background-color: rgb(223, 220, 220);
+   background-color: #dfdcdc;
    position: relative;
    font-size: 1.4vw;
 
@@ -166,7 +166,7 @@ header {
    bottom: calc(-60px - 10px);
    left: 23%;
    background-color: #00733b !important;
-   color: white !important;
+   color: #ffffff !important;
    border: 0;
    padding: 5px;
    margin-bottom: 1.75vw;
@@ -184,8 +184,8 @@ header {
 }
 
 .noregis {
-   color: black;
-   background-color: rgb(223, 220, 220);
+   color: #000000;
+   background-color: #dfdcdc;
    position: relative;
    top: 50%;
    padding: 20px;

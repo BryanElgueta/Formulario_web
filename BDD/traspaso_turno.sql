@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-03-2023 a las 21:50:17
+-- Tiempo de generación: 18-03-2023 a las 23:05:13
 -- Versión del servidor: 8.0.32
--- Versión de PHP: 8.0.25
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -70,9 +70,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`usuario_id`, `email`, `nombre`, `password`, `apellido`) VALUES
-(1, '', 'Luis', '', 'Baeza'),
-(2, 'rrojasg@agrosuper.com', 'Roberto', '', 'Rojas'),
-(3, 'mmarambio@agrosuper.com', 'Miguel', '', 'Marambio'),
 (4, 'bryansecu3@outlook.com', 'Brayan', '$2y$10$H/l7I7pCtMsIGD95.s7WCuGREblS1gK00Bfs2aKAlh74NhODrNdX2', 'Elgueta'),
 (5, 'informaticapsv@agrosuper.com', 'Equipo ', '$2y$10$LAuE4PhbpyjLPLOTlj2r.ODM6r2Soqp6iaes.ko0vQ/.W3ag4WuAe', 'informatica');
 
@@ -107,7 +104,7 @@ ALTER TABLE `formulario_traspaso`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `usuario_id` int NOT NULL AUTO_INCREMENT COMMENT 'ID de usuarios', AUTO_INCREMENT=6;
+  MODIFY `usuario_id` int NOT NULL AUTO_INCREMENT COMMENT 'ID de usuarios', AUTO_INCREMENT=10;
 
 --
 -- Restricciones para tablas volcadas

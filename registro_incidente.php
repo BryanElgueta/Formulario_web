@@ -47,7 +47,7 @@
             $contador = mysqli_num_rows($resultado); // Obtiene la cantidad de registros devueltos por la consulta
             if ($contador > 0) { // Si hay registros, muestra el botón de descarga de Excel ?>
          <ul class="registros">
-            <h2 id="texto2">Registros</h2>
+            <h3 id="texto2">Registros</h3>
             <h3><strong>Fecha</strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</strong><strong>Incidente Grave</strong></h3>
             <?php while ($fila = mysqli_fetch_assoc($resultado)) { ?>
             <p>
