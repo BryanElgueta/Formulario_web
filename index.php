@@ -9,15 +9,13 @@
       <link rel="stylesheet" href="css\styleindex.css">
       <link rel="shortcut icon" href="img\favico.png">
    </head>
-
    <?php
-        if (isset($_GET['exito']) && $_GET['exito'] == 1) {
-         echo '<div id="mensaje-exito transicion" class="mensaje-exito transicion">¡Mensaje enviado con exito!</div>';
-         header("Refresh:4; url=index.php");
-        }
-
+      if (isset($_GET['exito']) && $_GET['exito'] == 1) {
+       echo '<div id="mensaje-exito transicion" class="mensaje-exito transicion">¡Mensaje enviado con exito!</div>';
+       header("Refresh:4; url=index.php");
+      }
+      
       ?>
-     
    <script>
       // Oculta el mensaje de éxito después de 3 segundos
       setTimeout(function() {
@@ -33,17 +31,16 @@
    <body>
       <header>
          <a class="textregis" href="registro_incidente.php"><button class="registroincidente">Registro incidente grave</button></a>
-
       </header>
       <h1 class="textwelcome">Traspaso turno TI</h1>
       <div id="current_date">
-      <script>
-         date = new Date();
-         year = date.getFullYear();
-         month = date.getMonth() + 1;
-         day = date.getDate();
-         document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
-      </script>
+         <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+         </script>
       </div>
       <div>
          <h2 class="subtxt">Bitácora diaria de cambio de turno en TI</h2>

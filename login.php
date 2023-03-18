@@ -47,6 +47,7 @@
          <div>
             <input type="submit" class="buttonlogin" name="btonlogin" value="Iniciar Sesión"></input>
          </div>
+         <a class="txtregister" href="register.php">¿No estas registrado?, Haz click aqui!</a>
          <div>
             <img src="img\Logo-login.png" class="img-logg">
          </div>

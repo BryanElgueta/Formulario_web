@@ -30,8 +30,7 @@ if (!empty($_POST["btonlogin"])) {
 
         // Si se encuentra un usuario con el correo electrónico proporcionado, se verifica la contraseña
         if ($datos = $result->fetch_object()) {
-
-            ////ENCRIPTAR CONTRASEÑAS EN https://onlinephp.io/password-hash e insertar en base de datos 
+            ////ENCRIPTAR CONTRASEÑAS EN https://onlinephp.io/password-hash e insertar en base de datos de manera manual
             ////si no esta encriptada no inicia sesion
             if (password_verify($password, $datos->password)) {
                 $_SESSION['nombre'] = $datos->nombre;
@@ -46,6 +45,7 @@ if (!empty($_POST["btonlogin"])) {
     }
 }
 ?>
+
 
 
 

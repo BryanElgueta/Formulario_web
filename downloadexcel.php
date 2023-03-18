@@ -1,24 +1,21 @@
-
 <?php
+include 'conexiondb.php';
 
-include('conexiondb.php');
-// Incluye la biblioteca PhpSpreadsheet
 require 'vendor/autoload.php';
-
+// Incluye la biblioteca PhpSpreadsheet
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-// ...
 
 // Si se ha enviado el formulario, recupera las fechas y realiza la consulta SQL
 if (isset($_POST['descargar'])) {
     $fechaInicio = $_POST['fecha_inicio'];
     $fechaFin = $_POST['fecha_fin'];
-    
+
     // Construye la consulta SQL utilizando BETWEEN para obtener las fechas en el rango especificado
     $consulta = "SELECT * FROM formulario_traspaso WHERE fecha BETWEEN '$fechaInicio' AND '$fechaFin'";
-    
+
     // Ejecuta la consulta
     $resultado = mysqli_query($conexion, $consulta);
 
@@ -55,5 +52,6 @@ if (isset($_POST['descargar'])) {
     $writer->save('php://output');
     exit();
 }
+
 
 ?>
