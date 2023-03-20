@@ -29,11 +29,32 @@ if (isset($_POST['descargar'])) {
     $hoja->setCellValue('A1', 'Fecha');
     $hoja->setCellValue('B1', 'Incidente Grave');
 
+    // Agrega estilo a los encabezados de las columnas
+$encabezados = 'A1:B1'; // rango de celdas de los encabezados
+$hoja->getStyle($encabezados)->applyFromArray([
+    'font' => [
+        'bold' => true,
+    ],
+    'alignment' => [
+        'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY, 
+         \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER
+    ],
+]);
+
     // Agrega los datos de la consulta a las filas de la hoja
     $fila = 2;
     while ($registro = mysqli_fetch_assoc($resultado)) {
         $hoja->setCellValue('A' . $fila, $registro['fecha']);
         $hoja->setCellValue('B' . $fila, $registro['incidentegrave']);
+
+        $hoja->getStyle('A' . $fila)->getAlignment()->setWrapText(true)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY);
+        $hoja->getStyle('H' . $fila)->getAlignment()->setWrapText(true)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY);
+
+            // Ajusta el ancho de las columnas al contenido automáticamente
+    foreach(range('A','B') as $columna) {
+        $hoja->getColumnDimension($columna)->setAutoSize(true);
+    }
+
         $fila++;
     }
 

@@ -31,6 +31,7 @@
    <body>
       <header>
          <a class="textregis" href="registro_incidente.php"><button class="registroincidente">Registro incidente grave</button></a>
+         <a class="textregistodo" href="registro_todo.php"><button class="registodo">Registro formulario</button></a>
       </header>
       <h1 class="textwelcome">Traspaso turno TI</h1>
       <div id="current_date">

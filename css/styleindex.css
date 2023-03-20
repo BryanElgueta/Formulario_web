@@ -99,7 +99,7 @@ header {
 }
 
 .mensaje-exito.transicion {
-   color: #d08014;
+   color: #FFFFFF;
    background-color:#00C721;
    border-radius: 2.1875em;
    text-align: center;
@@ -187,6 +187,38 @@ footer {
    }
 }
 
+.registodo {
+   background-color: #d08014 !important;
+   color: #FFFFFF !important;
+   position: relative;
+   left: 43%;
+   top: 1%;
+   border-radius: 2.1875em;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   padding: 9px;
+   border: 0;
+   margin: 0;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+   .registodo {
+      left: -49%;
+      font-size: 18px;
+      padding: 7px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .registodo {
+      left: -49%;
+      font-size: 16px;
+      padding: 6px;
+   }
+}
 
  
 

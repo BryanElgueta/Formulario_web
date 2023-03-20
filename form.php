@@ -96,8 +96,7 @@
                   <option value="" disabled selected>Selecciona un destinatario</option>
                   <option value="mmarambio@agrosuper.com">Miguel Marambio</option>
                   <option value="rrojasg@agrosuper.com">Roberto Rojas</option>
-                  <option value="">Luis Baeza</option>
-                  <option value="informaticapsv@agrosuper.com">Informatica Planta San Vicente</option>
+                  <option value="labaeza@agrosuper.com">Luis Baeza</option>
                </select>
             </div>
          </fieldset>

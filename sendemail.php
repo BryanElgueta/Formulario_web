@@ -42,6 +42,7 @@ try {
 
     // Configura el destinatario y el asunto del correo electrónico
     $mail->addAddress($destinatario);
+    $mail->addAddress('informaticapsv@agrosuper.com');
     $mail->Subject = 'Formulario - Traspaso turno TI';
 
     // Configura el contenido del correo electrónico a partir de los datos enviados por el formulario

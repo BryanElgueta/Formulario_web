@@ -164,7 +164,8 @@ input#password:focus::placeholder {
   }
 
   .botonvolver {
-     margin-top: 20px;
+     margin-top: 0;
+     border-radius: 0;
      margin-left: 0;
      width: 100%;
   }

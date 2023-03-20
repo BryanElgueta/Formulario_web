@@ -16,14 +16,33 @@ body {
    color: #FFFFFF;
    border: 0;
    border-radius: 35px;
-   width: 10vw;
+   width: 150px;
    height: auto;
    z-index: 1;
-   font-size: 1.5vw;
+   font-size: 18px;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   ;
    cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .botonvol {
+   margin-top: 0;
+   border-radius: 0;
+   margin-left: 0;
+   width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+   .botonvol {
+      margin-top: 0;
+      border-radius: 0;
+      margin-left: 0;
+      width: 100%;
+   }
+ }
+
+
 
 
 .texto {
@@ -137,7 +156,7 @@ body {
 }
 
 #timer {
-   color: #d08014 !important;
+   color: #FFFFFF !important;
    background-color: #0a4a77 !important;
    border-top: #FFFFFF;
    border-color: #FFFFFF;
@@ -172,6 +191,7 @@ header {
    transform: translateX(-52%);
    z-index: 1;
    top: -10px;
+   width: 30%;
 }
 
 #fechaActual[type="date"] {
