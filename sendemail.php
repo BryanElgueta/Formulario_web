@@ -63,6 +63,7 @@ try {
     $contenido .= "<p><strong>Incidente grave: </strong> {$incidentegrave}</p>";
 
     $mail->Body = $contenido;
+    //altbody sirve para usuario que no tienen html activado en sus correos
     $mail->AltBody = strip_tags($contenido);
 
     // envia el correo y redirige a index.php con un mensaje de exito.

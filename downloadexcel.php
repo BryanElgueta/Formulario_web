@@ -1,8 +1,10 @@
 <?php
-include 'conexiondb.php';
+//incluir base de datos
+include ('conexiondb.php');
 
 require 'vendor/autoload.php';
-// Incluye la biblioteca PhpSpreadsheet
+
+// Incluye la biblioteca PhpSpreadsheet para poder descargar archivo .xlsx
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -35,6 +37,7 @@ $hoja->getStyle($encabezados)->applyFromArray([
     'font' => [
         'bold' => true,
     ],
+    //el texto del encabezado queda con justificacion y centrado
     'alignment' => [
         'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY, 
          \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER
@@ -50,18 +53,19 @@ $hoja->getStyle($encabezados)->applyFromArray([
         $hoja->getStyle('A' . $fila)->getAlignment()->setWrapText(true)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY);
         $hoja->getStyle('H' . $fila)->getAlignment()->setWrapText(true)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER)->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_JUSTIFY);
 
-            // Ajusta el ancho de las columnas al contenido automáticamente
+    // Ajusta el ancho de las columnas al contenido automáticamente
     foreach(range('A','B') as $columna) {
         $hoja->getColumnDimension($columna)->setAutoSize(true);
     }
-
+    //si hay mas registros se repite el proceso
         $fila++;
     }
 
-    // Crea un objeto Writer para guardar el archivo Excel en disco
+    // Crea un objeto Writer para guardar el archivo Excel
     $writer = new Xlsx($spreadsheet);
     $nombreArchivo = 'registro_incidentes.xlsx';
 
+    //evita que se guarde la misma informacion cuando se descargue el excel
     ob_end_clean();
     // Configura las cabeceras HTTP para indicar que se descargará un archivo Excel
     header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');

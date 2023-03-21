@@ -25,7 +25,9 @@
       <meta name="keywords" content="">
       <meta name="description" content="consulta registro incidentes">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- estilo css -->
       <link rel="stylesheet" href="css\styleregistodo.css">
+      <!-- icono que se muestra en la pestaña de la pagina-->
       <link rel="shortcut icon" href="img\favico.png">
       <meta charset="UTF-8">
       <title>Registros de formularios - Traspaso turno TI</title>
@@ -58,11 +60,13 @@
                 <li><strong>Comentario turno actual:</strong> <?php echo $fila['comentario_turnoactual']; ?></li>
                 <li><strong>Comentario turno anterior:</strong> <?php echo $fila['comentario_turnoanterior']; ?></li>
                 <li><strong>Incidente grave:</strong> <?php echo $fila['incidentegrave']; ?></li>
+                <!--etiqueta HR hace referencia a una separacion de linea diferente a <P>-->
                 <hr style="width:50%;text-align:left;margin-left:0">
                 </ul>
                 
             <?php } ?>
          </ul>
+         <!-- Boton que redirige a el archivo para descargar en excel-->                                                                      <!-- icono que acompaña al texto -->
          <button type="submit" form="registro" class="dwexcel" formaction="downloadexcelregistodo.php" name="descargar">Descargar en Excel<img class="xlsico"src="img\xls-file.png"></button>
          <?php 
             } else { // Si no hay registros, muestra un mensaje

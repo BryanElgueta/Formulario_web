@@ -219,6 +219,31 @@ footer {
       padding: 6px;
    }
 }
+@media screen and (max-width: 1024px) {
+   .registodo {
+      left: 35%;
+      font-size: 18px;
+      padding: 10px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .registodo {
+      left: -3%;
+      top: -29px;
+      font-size: 16px;
+      padding: 6px;
+   }
+}
+
+@media screen and (max-width: 414px) {
+   .registodo {
+      left: -50%;
+      font-size: 16px;
+      padding: 6px;
+   }
+}
+
 
  
 

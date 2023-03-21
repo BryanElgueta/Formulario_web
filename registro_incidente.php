@@ -1,8 +1,9 @@
 <?php
    // Incluye el archivo de conexión a la base de datos
-   include 'conexiondb.php';
+   include ('conexiondb.php');
    
    // Inicializa las variables de las fechas
+   //variables vacias ya que las toma de la linea 41 y 44 de este archivo
    $fechaInicio = '';
    $fechaFin = '';
    $resultado = '';
@@ -35,6 +36,7 @@
          <a class="textvol" href="index.php"><button class="botonvolver">Volver a inicio</button></a>
       </header>
       <h1 class="text1">Consulta incidente grave:</h1>
+
       <form class="form2" id="registro" method="POST">
          <label class="text_fechaini" for="fecha_inicio">Desde:</label>
          <input type="date" id="fecha_inicio" name="fecha_inicio" value="<?php echo $fechaInicio; ?>">
@@ -63,5 +65,6 @@
             echo "<p class='noregis'>No se encontraron registros para las fechas seleccionadas.</p>";
             }} ?> 
       </form>
+      
    </body>
 </html>

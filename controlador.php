@@ -4,7 +4,8 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-include 'conexiondb.php';
+//incluir archivo que llama a la base de datos
+include ('conexiondb.php');
 
 // Verifica si se ha enviado el formulario de inicio de sesión
 if (!empty($_POST["btonlogin"])) {
@@ -30,13 +31,14 @@ if (!empty($_POST["btonlogin"])) {
 
         // Si se encuentra un usuario con el correo electrónico proporcionado, se verifica la contraseña
         if ($datos = $result->fetch_object()) {
-            ////ENCRIPTAR CONTRASEÑAS EN https://onlinephp.io/password-hash e insertar en base de datos de manera manual
+            ////SE PUEDE ENCRIPTAR CONTRASEÑAS DE FORMA MANUAL EN https://onlinephp.io/password-hash e insertar en base de datos
             ////si no esta encriptada no inicia sesion
             if (password_verify($password, $datos->password)) {
                 $_SESSION['nombre'] = $datos->nombre;
                 $_SESSION['apellido'] = $datos->apellido;
                 header("location:form.php");
             } else {
+                //SI LOS DATOS NO SON LOS DE LA BASE DE DATOS ARROJA ERROR EN LOGIN.PHP
                 header("location:login.php?error=usuario_incor");
             }
         } else {

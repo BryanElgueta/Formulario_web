@@ -26,8 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Preparar y ejecutar la consulta SQL para insertar el usuario en la tabla
   $sql = "INSERT INTO users (nombre, apellido, email, password) VALUES ('$nombre', '$apellido', '$email', '$password')";
   if ($conexion->query($sql) === TRUE) {
+    //se registra usuario  se redirige a register.php?exito
     header("location:login.php?exito=registrad");
   } else {
+    //hubo un problema con las credenciales redirige a register.php?error
     header("location:register.php?error=registro_incorr");
   }
 
