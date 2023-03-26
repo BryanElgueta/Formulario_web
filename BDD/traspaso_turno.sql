@@ -48,7 +48,7 @@ CREATE TABLE `formulario_traspaso` (
 --
 
 INSERT INTO `formulario_traspaso` (`id_formulario`, `id_usuario`, `nombre`, `apellido`, `fecha`, `colaborador_turno`, `tipo_turno`, `comentario_turnoactual`, `comentario_turnoanterior`, `incidentegrave`) VALUES
-(7, 5, 'Equipo ', 'informatica', '2023-03-15', 'Miguel Marambio', 'Turno Intermedio', 'Se detecta en turno intermedio problemas con pc mesanninne\r\nSe reconfigura estación de reproceso en cartón freezer y paletizado fresco\r\nse levantan ticket mencionados en grupo de trabajo: 876400, 876311\r\nse validan nuevos permisos para Servidor ADP', 'Roberto deja operando raf 32.49 y 32.43 para reproceso', 'SIN COMENTARIOS');
+(, , ' ', '', '', '', ', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -70,8 +70,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`usuario_id`, `email`, `nombre`, `password`, `apellido`) VALUES
-(4, 'bryansecu3@outlook.com', 'Brayan', '$2y$10$H/l7I7pCtMsIGD95.s7WCuGREblS1gK00Bfs2aKAlh74NhODrNdX2', 'Elgueta'),
-(5, 'informaticapsv@agrosuper.com', 'Equipo ', '$2y$10$LAuE4PhbpyjLPLOTlj2r.ODM6r2Soqp6iaes.ko0vQ/.W3ag4WuAe', 'informatica');
+(, '', '', '', ''),
+(, '', ' ', '', '');
 
 --
 -- Índices para tablas volcadas
