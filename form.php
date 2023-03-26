@@ -38,16 +38,16 @@
          <fieldset>
             <legend class="legendtxt">Colaborador de turno:</legend>
             <div>
-               <input class="opcion" type="radio" id="Roberto" name="opcion" value="Roberto Rojas" required>
-               <label for="Roberto">Roberto Rojas</label>
+               <input class="opcion" type="radio" id="" name="opcion" value="" required>
+               <label for=""></label>
             </div>
             <div>
-               <input class="opcion2" type="radio" id="Miguel" name="opcion" value="Miguel Marambio" required>
-               <label for="Miguel">Miguel Marambio </label>
+               <input class="opcion2" type="radio" id="" name="opcion" value="" required>
+               <label for=""></label>
             </div>
             <div>
-               <input class="opcion3" type="radio" id="Luis" name="opcion" value="Luis Baeza" required>
-               <label for="Luis">Luis Baeza</label>
+               <input class="opcion3" type="radio" id="" name="opcion" value="" required>
+               <label for=""></label>
             </div>
          </fieldset>
          <fieldset>
@@ -94,9 +94,9 @@
             <div>
                <select class="selectemail"name="destinatario" required>
                   <option value="" disabled selected>Selecciona un destinatario</option>
-                  <option value="mmarambio@agrosuper.com">Miguel Marambio</option>
-                  <option value="rrojasg@agrosuper.com">Roberto Rojas</option>
-                  <option value="labaeza@agrosuper.com">Luis Baeza</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
                </select>
             </div>
          </fieldset>
